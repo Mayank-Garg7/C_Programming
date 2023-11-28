@@ -1,7 +1,3 @@
-/*
-This code has been compiled in Code::Blocks 16.01 IDE on Windows 10
-Author:- Mishal Shah
-*/
 #include<stdio.h>
 #include<string.h>
 #include <stdlib.h>
@@ -14,8 +10,8 @@ Author:- Mishal Shah
 #define TRUE 1
 #define FALSE 0
 
-void board(char x, char o, unsigned char *u1, unsigned char *u2, char *a); // 2D Graphics on CLI
-void rules(); // Prints rule page on CLI
+void board(char x, char o, unsigned char *u1, unsigned char *u2, char *a); 
+void rules(); 
 int checkforwin(char *a); // Checks wether a player won
 bool decision(char *x, char *o, unsigned char *u1); // points player to mark X or mark 0
 int main()
@@ -185,9 +181,9 @@ void rules()
     if(link=='y' || link=='Y')
     {
         if (OS=="nt")
-            system("start http://www.wikihow.com/Play-Tic-Tac-Toe");
+            system("start Play-Tic-Tac-Toe");
         if (OS=="posix")
-            system("firefox http://www.wikihow.com/Play-Tic-Tac-Toe");
+            system("firefox Play-Tic-Tac-Toe");
     }
 
 }
